@@ -1,0 +1,26 @@
+.hero {
+  height: 360px;
+}
+
+.title {
+  max-width: 600px;
+  padding-top: 20px;
+  padding-left: 100px;
+
+  font-size: 130px;
+}
+
+.gradient {
+  height: 300px;
+  padding: 0.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cat-title {
+  text-align: center;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 130px;
+}
