@@ -10,6 +10,53 @@
   font-size: 130px;
 }
 
+.navegador {
+  height: 100px;
+  padding: 0 12%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #2f3542;
+  font-family: "Roboto", sans-serif;
+  font-size: 46px;
+  list-style-type: none;
+}
+
+.navegador li {
+  width: auto;
+}
+
+.navegador a {
+  text-decoration: none;
+}
+
+.otras-paginas:link,
+.otras-paginas:visited,
+.otras-paginas:active,
+.otras-paginas:visited:active {
+  color: #ced6e0;
+}
+
+.otras-paginas:hover,
+.otras-paginas:visited:hover {
+  color: #dfe4ea;
+}
+
+.pagina-actual:link,
+.pagina-actual:visited,
+.pagina-actual:active,
+.pagina-actual:visited:active,
+.gradient {
+  color: #ffa502;
+}
+
+.pagina-actual:hover,
+.pagina-actual:visited:hover {
+  color: #eccc68;
+}
+
 .gradient {
   height: 300px;
   padding: 0.5em 0;

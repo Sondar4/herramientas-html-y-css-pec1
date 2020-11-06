@@ -14,7 +14,7 @@ Para el desarrollo de la web he utilizado dos herramientas: VSCode y Firefox. He
 
 ## 3. Desarrollo del sitio
 
-Estoy cursando esta asignatura a la vez que 'Programación en JavaScript para programadores' y 'HTML y CSS', por tanto mis conocimientos prácticos no son demasiado avanzados y he optado por un diseño sencillo. De la parte de JavaScript ando aún especialmente flojo (no había utilizado el lenguaje nunca antes de este semestre), así que simplemente he añadido <!-- TODO: añadir lo que sea que añada>.
+Estoy cursando esta asignatura a la vez que 'Programación en JavaScript para programadores' y 'HTML y CSS', por tanto mis conocimientos prácticos no son demasiado avanzados y he optado por un diseño sencillo. De la parte de JavaScript ando aún especialmente flojo (no había utilizado el lenguaje nunca antes de este semestre), así que simplemente he añadido <!-- TODO: añadir lo que sea que añada -->.
 
 Anteriormente sí que había hecho algún curso de HTML y CSS, pero nada más allá de *media queries*, así que he optado por ellas y he empezado creando la versión móvil de las páginas para luego añadir los estilos de pantallas más amplias.
 
