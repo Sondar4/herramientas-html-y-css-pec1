@@ -46,7 +46,7 @@
 
 .otras-paginas:hover,
 .otras-paginas:visited:hover {
-  color: #dfe4ea;
+  color: #ffffff;
 }
 
 .pagina-actual:link,
@@ -75,6 +75,7 @@
 
   font-family: "Raleway", sans-serif;
   font-size: 130px;
+  line-height: normal;
 }
 
 .estanteria {
@@ -106,5 +107,48 @@
 }
 
 .portada {
-  max-width: 70%;
+  width: 70%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .hero {
+    height: 180px;
+  }
+  .logo {
+    padding: 0;
+  }
+  .title {
+    font-size: 90px;
+  }
+  .navegador {
+    height: 40px;
+    font-size: 18px;
+    justify-content: space-evenly;
+  }
+  .gradient {
+    height: 250px;
+    padding: 50px 0;
+  }
+  .cat-title {
+    font-size: 80px;
+  }
+  .texto-del-cuerpo {
+    font-size: 20px;
+  }
+  .estanteria {
+    padding: 0;
+  }
+  .estanteria h2 {
+    font-size: 32px;
+  }
+  .libro {
+    width: 50%;
+    margin-top: 70px;
+  }
+  .portada {
+    max-width: 350px;
+  }
+  .libro h3 {
+    font-size: 28px;
+  }
 }
