@@ -107,6 +107,7 @@
 }
 
 .portada {
+  max-width: 500px;
   width: 70%;
 }
 
