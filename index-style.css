@@ -6,21 +6,15 @@
 }
 
 .hero {
-  height: 480px;
+  height: 180px;
   display: flex;
   background: linear-gradient(to bottom, #5352ed, #dfe4ea);
 }
 
-.logo {
-  height: 100%;
-  padding: 20px;
-  width: auto;
-}
-
 .title {
   padding-top: 60px;
-  padding-left: 40px; 
-  font-size: 146px;
+  text-align: center;
+  font-size: 64px;
   font-family: 'Bangers', cursive;
   color: #eccc68;
 }
@@ -36,27 +30,31 @@
 }
 
 .gradient {
-  padding: 1em 5%;
+  padding: 10px 5%;
   display: block;
   background: linear-gradient(to bottom, #dfe4ea, #ffffff);
   font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
-  font-size: 38px;
+  font-size: 18px;
   color: #2f3542;
 }
 
 .gradient p {
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 .texto-del-cuerpo {
-  padding: 20px 0;
+  padding: 10px 0;
 
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.5em;
-  font-size: 38px;
+  font-size: 18px;
   color: #2f3542;
+}
+
+.texto-del-cuerpo strong {
+  color: #ff7f50;
 }
 
 .button-wrapper {
@@ -69,9 +67,10 @@
 
 .button {
   padding: 2%;
-  margin: 1.5em 0;
-  width: 55%;
-  height: calc(200px + 4%);
+  margin: 1em 0;
+  width: 65%;
+  height: 85px;
+  max-width: 360px;
 
   display: flex;
   flex-wrap: wrap;
@@ -79,11 +78,11 @@
   align-items: center;
 
   background-color: #7bed9f;
-  border-radius: 20px;
-  box-shadow: 7px 7px 0 #2ed573;
+  border-radius: 15px;
+  box-shadow: 3px 3px 0 #2ed573;
 
   font-family: 'Raleway', sans-serif;
-  font-size: 48px;
+  font-size: 22px;
 }
 
 .button:link,
@@ -95,7 +94,7 @@
 .button:hover,
 .button:visited:hover {
   background-color: #9eeeb7;
-  box-shadow: 7px 7px 0 #67d896;
+  box-shadow: 3px 3px 0 #67d896;
 
   text-decoration: none;
   color: #2f3542;
@@ -104,16 +103,15 @@
 .button:active {
   text-decoration: none;
   color: #2f3542;
-  box-shadow: 4px 4px 0 #2ed573;
+  box-shadow: 1px 1px 0 #2ed573;
 }
 
 .button-image {
-  max-width: 170px;
-  max-height: 170px;
+  max-width: 70px;
+  max-height: 70px;
 }
 
 .contenedor-centrado {
-  padding: 1.5em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -121,15 +119,15 @@
 }
 
 .imagen-del-cuerpo {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 120px;
+  max-height: 120px;
 }
 
 .pie-de-pagina {
   margin-top: 1em;
   text-align: center;
-  font-size: 24px;
-  border-top: 3px solid #ced6e0;
+  font-size: 14px;
+  border-top: 2px solid #ced6e0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #57606f;
@@ -137,7 +135,11 @@
 
 .pie-de-pagina p {
   margin: 1.5em 0;
-}  
+}
+
+.pie-de-pagina strong {
+  color: #ff7f50;
+}
 
 .saludo {
   font-weight: 400;
@@ -148,28 +150,51 @@
   display: None;
 }
 
-@media only screen and (min-width: 540px) and (max-width: 1024px){
+@media only screen and (min-width: 540px){
+  .title {
+    font-size: 84px;
+  }
   .gradient,
   .texto-del-cuerpo {
-    font-size: 32px;
+    font-size: 20px;
   }
   .button {
-    font-size: 42px;
+    padding: 10px;
+    height: 110px;
+    width: 55%;
+  
+    font-size: 32px;
   }
   .pie-de-pagina {
-    font-size: 24px;
+    font-size: 16px;
   }
   .button-image {
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 100px;
+    max-height: 100px;
   }
   .imagen-del-cuerpo {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 170px;
+    max-height: 170px;
+  }
+  .contenedor-centrado {
+    margin-bottom: 20px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
+  .hero {
+    height: 240px;
+  }
+  .title {
+    font-size: 124px;
+  }
+  .pie-de-pagina {
+    font-size: 16px;
+  }
+  .gradient,
+  .texto-del-cuerpo {
+    font-size: 22px;
+  }
   .general-wrapper{
     display: flex;
     justify-content: space-evenly;
@@ -184,25 +209,25 @@
   .texto-del-cuerpo {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    font-size: 24px;
   }
   .button {
     font-size: 34px;
-    width: 80%;
-    height: 130px;
+    width: 90%;
+    height: 120px;
   }
   .pie-de-pagina {
     font-size: 12px;
   }
   .button-image {
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 100px;
+    max-height: 100px;
   }
   .imagen-del-cuerpo {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 180px;
+    max-height: 180px;
   }
   .pie-de-pagina {
+    font-size: 16px;
     border-top: 2px solid #ced6e0;
   }
   .pantalla-grande {
