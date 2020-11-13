@@ -1,11 +1,7 @@
-console.log('Script loaded!')
-
-function display(elem) {
+window.display = function(elem) {
   if ('oculto' in elem.classList) {
-    elem.classList.add('titulo-mostrado')
+    console.log("Está oculto!")
+    // elem.classList.add('titulo-mostrado')
   }
-}
-
-function myTest() {
-  console.log("The code is working!")
+  console.log("No está oculto!")
 }
