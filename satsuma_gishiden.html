@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <title>Awsm - Satsuma</title>
@@ -15,7 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
     rel="stylesheet">
 </head>
-
 <body>
   <header class="hero">
     <h1 class="title">Awsm Manga!</h1>
@@ -39,13 +37,15 @@
       </div>
       <div class="contenedor-centrado">
         <ol class="informacion-del-libro">
-          <li><a class="titulo-mostrado"
-              href="#"><strong>Descripción</strong></a></li>
-          <li><a href="#"><strong>Características</strong></a></li>
+          <li><a id="Descripcion" class="titulo-mostrado"
+            onclick="display(this);"
+            href="#/Descripcion"><strong>Descripción</strong></a></li>
+          <li><a id="Caracteristicas" onclick="display(this);"
+            href="#/Caracteristicas"><strong>Características</strong></a></li>
         </ol>
       </div>
       <div class="contenedor-centrado">
-        <p class="informacion">Una historia de samurais pura y dura, situada en
+        <p id="DescripcionTexto" class="informacion">Una historia de samurais pura y dura, situada en
           el olvidado Japón de mediados del siglo XVIII. Una época en la que los
           samurais se encuentran fuera de lugar sin batallas que librar y en la
           que se han visto relegados a malvivir de trabajos como la alfarería y
@@ -53,7 +53,7 @@
           parte de los samurais de rangos superiores, lo que lleva a algunos de
           los miembros de los estamentos más bajos a cuestionarse el sistema...
         </p>
-        <ul class="informacion oculto">
+        <ul id="CaracteristicasTexto" class="informacion oculto">
           <li>Autor: Hiroshi Hirata</li>
           <li>Género: drama</li>
           <li>Volúmenes: 5</li>
@@ -66,6 +66,6 @@
     <p>Trabajo realizado por <strong>Ramon Pérez Garcia</strong>. Asignatura
       Herramientas HTML i CSS.</p>
   </footer>
+  <script src="/display_block.js"></script>
 </body>
-
 </html>

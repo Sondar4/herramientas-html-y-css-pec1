@@ -1,7 +1,20 @@
+function change_display(elem1, elem2) {
+  let other = document.getElementById(elem2);
+  let otherTexto = document.getElementById(elem2 + 'Texto');
+  let elemTexto = document.getElementById(elem1 + 'Texto');
+  other.classList.remove('titulo-mostrado');
+  otherTexto.classList.add('oculto');
+  elemTexto.classList.remove('oculto')
+}
+
 window.display = function(elem) {
-  if ('oculto' in elem.classList) {
-    console.log("Está oculto!")
-    // elem.classList.add('titulo-mostrado')
+  if (!elem.classList.contains('titulo-mostrado')) {
+    if (elem.id == 'Descripcion') {
+      change_display('Descripcion', 'Caracteristicas')
+    }
+    if (elem.id == 'Caracteristicas') {
+      change_display('Caracteristicas', 'Descripcion')
+    }
+    elem.classList.add('titulo-mostrado');
   }
-  console.log("No está oculto!")
 }

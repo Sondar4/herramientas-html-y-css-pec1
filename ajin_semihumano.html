@@ -14,55 +14,56 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
     rel="stylesheet">
-  </head>
-  
-  <body>
-    <header class="hero">
-      <h1 class="title">Awsm Manga!</h1>
-    </header>
-    <nav>
-      <ol class="navegador">
-        <li><a href="/index.html" class="otras-paginas">Índice</a></li>
-        <li><a href="/historico.html" class="otras-paginas">Histórico</a></li>
-        <li><a href="/sobrenatural.html" class="pagina-actual">Sobrenatural</a>
-        </li>
-      </ol>
-    </nav>
-    <div class="estanteria">
-      <h2>Ajin Semihumano</h2>
-      <div class="libro libro-principal">
-        <div class="contenedor-centrado">
-          <a class="portada" href="/ajin_semihumano.html">
-            <img src="/images/ajin.jpg" alt="Portada de Ajin Semihumano">
-          </a>
-        </div>
-        <div class="contenedor-centrado">
-          <ol class="informacion-del-libro">
-            <li><a class="titulo-mostrado" href="#"><strong>Descripción</strong></a></li>
-            <li><a onclick="display(this);" href="#"><strong>Características</strong></a></li>
-          </ol>
-        </div>
-        <div class="contenedor-centrado">
-          <p class="informacion">La humanidad ha descubierto una
-            subraza dentro del género humano: los semihumanos, seres de aspecto
-            humano pero incapaces de morir y que aparecen muy de vez en cuando entre
-            la población. Cuando el joven protagonista descubre que es uno de ellos,
-            se inicia su pesadilla…</p>
-            <ul class="informacion oculto">
-              <li>Autor: Gamon Sakurai</li>
-              <li>Género: aventura, horror, misterio</li>
-              <li>Volúmenes: 16</li>
-              <li>Recorrido: 06/07/2012 - Presente</li>
-            </ul>
-          </div>
-        </div>
+</head>
+
+<body>
+  <header class="hero">
+    <h1 class="title">Awsm Manga!</h1>
+  </header>
+  <nav>
+    <ol class="navegador">
+      <li><a href="/index.html" class="otras-paginas">Índice</a></li>
+      <li><a href="/historico.html" class="otras-paginas">Histórico</a></li>
+      <li><a href="/sobrenatural.html" class="pagina-actual">Sobrenatural</a>
+      </li>
+    </ol>
+  </nav>
+  <div class="estanteria">
+    <h2>Ajin Semihumano</h2>
+    <div class="libro libro-principal">
+      <div class="contenedor-centrado">
+        <a class="portada" href="/ajin_semihumano.html">
+          <img src="/images/ajin.jpg" alt="Portada de Ajin Semihumano">
+        </a>
       </div>
-      <footer class="pie-de-pagina">
-        <p>Trabajo realizado por <strong>Ramon Pérez Garcia</strong>. Asignatura
-          Herramientas HTML i CSS.</p>
-      </footer>
-      <script src="/display_block.js"></script>
-    </body>
-      
-      </html>
-      
+      <div class="contenedor-centrado">
+        <ol class="informacion-del-libro">
+          <li><a id="Descripcion" class="titulo-mostrado"
+              onclick="display(this);"
+              href="#/Descripcion"><strong>Descripción</strong></a></li>
+          <li><a id="Caracteristicas" onclick="display(this);"
+              href="#/Caracteristicas"><strong>Características</strong></a></li>
+        </ol>
+      </div>
+      <div class="contenedor-centrado">
+        <p id="DescripcionTexto" class="informacion">La humanidad ha
+          descubierto una subraza dentro del género humano: los semihumanos,
+          seres de aspecto humano pero incapaces de morir y que aparecen muy de
+          vez en cuando entre la población. Cuando el joven protagonista
+          descubre que es uno de ellos, se inicia su pesadilla…</p>
+        <ul id="CaracteristicasTexto" class="informacion oculto">
+          <li>Autor: Gamon Sakurai</li>
+          <li>Género: aventura, horror, misterio</li>
+          <li>Volúmenes: 16</li>
+          <li>Recorrido: 06/07/2012 - Presente</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="pie-de-pagina">
+    <p>Trabajo realizado por <strong>Ramon Pérez Garcia</strong>. Asignatura
+      Herramientas HTML i CSS.</p>
+  </footer>
+  <script src="/display_block.js"></script>
+</body>
+</html>

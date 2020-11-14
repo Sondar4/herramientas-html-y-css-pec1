@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <title>Awsm - Death Note</title>
@@ -15,7 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
     rel="stylesheet">
 </head>
-
 <body>
   <header class="hero">
     <h1 class="title">Awsm Manga!</h1>
@@ -38,20 +36,22 @@
       </div>
       <div class="contenedor-centrado">
         <ol class="informacion-del-libro">
-          <li><a class="titulo-mostrado"
-              href="#"><strong>Descripción</strong></a></li>
-          <li><a href="#"><strong>Características</strong></a></li>
+          <li><a id="Descripcion" class="titulo-mostrado"
+            onclick="display(this);"
+            href="#/Descripcion"><strong>Descripción</strong></a></li>
+          <li><a id="Caracteristicas" onclick="display(this);"
+            href="#/Caracteristicas"><strong>Características</strong></a></li>
         </ol>
       </div>
       <div class="contenedor-centrado">
-        <p class="informacion">La vida del estudiante Light Yagami cambia cuando
+        <p id="DescripcionTexto" class="informacion">La vida del estudiante Light Yagami cambia cuando
           encuentra tendido en el suelo un cuaderno negro. Detrás de la portada
           del cuaderno hay escritas instrucciones que dicen que si se escribe el
           nombre de una persona en este cuaderno, morirá. Al principió Light se
           lo toma a broma hasta que una serie de eventos le hacen descubrir que
           el poder del cuaderno es real y un mundo de posibilidades se abre ante
           él.</p>
-        <ul class="informacion oculto">
+        <ul id="CaracteristicasTexto" class="informacion oculto">
           <li>Autor: Tsugumi Oba y Takeshi Obata</li>
           <li>Género: drama, misterio, psicológico, thriller</li>
           <li>Volúmenes: 12</li>
@@ -64,6 +64,6 @@
     <p>Trabajo realizado por <strong>Ramon Pérez Garcia</strong>. Asignatura
       Herramientas HTML i CSS.</p>
   </footer>
+  <script src="/display_block.js"></script>
 </body>
-
 </html>
