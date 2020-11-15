@@ -180,11 +180,30 @@
 }
 
 .informacion strong {
-  color: #ff7f50;
+  color: #ff4757;
 }
 
 .oculto {
   display: none;
+}
+
+.otras-obras {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.otras-obras a:link,
+.otras-obras a:visited,
+.otras-obras a:active,
+.otras-obras a:visited:active {
+  font-weight: 400;
+  color: #5352ed;
+  text-decoration: none;
+}
+
+.otras-obras a:hover,
+.otras-obras a:visited:hover {
+  color: #3742fa;
 }
 
 @media only screen and (min-width: 540px) {
@@ -283,6 +302,9 @@
   .informacion-del-libro {
     width: 60%;
     max-width: 750px;
+  }
+  .otras-obras {
+    margin-bottom: auto;
   }
   #CaracteristicasTexto {
     padding-left: 60px;

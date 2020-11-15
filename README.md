@@ -46,7 +46,7 @@ dist/
 
 #### Configuramos el fichero _.postcssrc_
 
-Postcss es una herramienta incluida en Parecel que sirve para transformar el CSS mediante plugins. En este caso vamos a utilizar el plugin *autoprefixer*, que es un postprocesador de CSS que añade prefijos para que nuestro código sea compatible con distintos navegadores.
+Postcss es una herramienta incluida en Parecel que sirve para transformar el CSS mediante plugins. En este caso vamos a utilizar el plugin _autoprefixer_, que es un postprocesador de CSS que añade prefijos para que nuestro código sea compatible con distintos navegadores.
 
 ```
 {
@@ -58,7 +58,7 @@ Postcss es una herramienta incluida en Parecel que sirve para transformar el CSS
 
 #### Finalmente procedemos a configurar el fichero _.broeserlistrc_
 
-Por defecto *autoprefixer* se fija solo en als 2 últimas versiones de los principales navegadores. Para que ampliar el rango de navegadores para los que adaptaremos nuestro código debemos configurar un fichero de nombre *.browserlistrc*. Dentro de este fichero escribiremos lo siguiente:
+Por defecto _autoprefixer_ se fija solo en als 2 últimas versiones de los principales navegadores. Para que ampliar el rango de navegadores para los que adaptaremos nuestro código debemos configurar un fichero de nombre _.browserlistrc_. Dentro de este fichero escribiremos lo siguiente:
 
 ```
 last 4 version
@@ -114,10 +114,9 @@ https://flamboyant-pike-3228bc.netlify.app
 
 ### 3.4 Comprobaciones finales
 
-
 Una vez acabadas las páginas he ejecutado unas comprobaciones adicionales:
 
 - He comprobado que no hubiera errores en el html con el validador: https://validator.w3.org/nu/
 - He comprobado que no hubiera errores en el css con el validador: https://jigsaw.w3.org/css-validator/
-- He ejecutado los *audits* de Chrome.
+- He ejecutado los _audits_ de Chrome.
 - He comprobado esta checklist de accesibilidad: https://www.a11yproject.com/checklist/
