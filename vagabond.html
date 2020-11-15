@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>Awsm - Vagabond</title>
-  <meta name="author" content="Ramon Pérez">
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <link rel="stylesheet" href="index-style.css">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-    rel="stylesheet">
-</head>
-<body>
-  <header class="hero">
-    <h1 class="title">Awsm Manga!</h1>
-  </header>
-  <nav>
-    <ol class="navegador">
-      <li><a href="/index.html" class="otras-paginas">Índice</a></li>
-      <li><a href="/historico.html" class="pagina-actual">Histórico</a></li>
-      <li><a href="/sobrenatural.html" class="otras-paginas">Sobrenatural</a>
-      </li>
-    </ol>
-  </nav>
-  <div class="estanteria">
-    <h2>Vagabond</h2>
-    <div class="libro libro-principal">
-      <div class="contenedor-centrado">
-        <a class="portada" href="/vagabond.html">
-          <img src="/images/vagabond.jpg" alt="Portada de Vagabond">
-        </a>
-      </div>
-      <div class="contenedor-centrado">
-        <ol class="informacion-del-libro">
-          <li><a id="Descripcion" class="titulo-mostrado"
-            onclick="display(this);"
-            href="#/Descripcion"><strong>Descripción</strong></a></li>
-          <li><a id="Caracteristicas" onclick="display(this);"
-            href="#/Caracteristicas"><strong>Características</strong></a></li>
-        </ol>
-      </div>
-      <div class="contenedor-centrado">
-        <p id="DescripcionTexto" class="informacion">Obra basada en la figura de <strong>Musashi
-            Miyamoto</strong> (1584-1645), un legendario guerrero japonés autor
-          del tratado sobre artes marciales titulado <strong>"El libro de los
-            cinco anillos"</strong>. La historia comienza en el emblemático
-          campo de batalla de Sekigahara, del cual al volver Musashi decide
-          emprender un viaje para convertirse en el guerrero perfecto.</p>
-        <ul id="CaracteristicasTexto" class="informacion oculto">
-          <li>Autor: Takehiko Inoue</li>
-          <li>Género: épico, artes marciales, drama</li>
-          <li>Volúmenes: 37</li>
-          <li>Recorrido: 1998 - 2010, 2012 - 2015</li>
-        </ul>
+  <head>
+    <meta charset="utf-8" />
+    <title>Awsm - Vagabond</title>
+    <meta name="author" content="Ramon Pérez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <h1 class="title">Awsm Manga!</h1>
+    </header>
+    <nav>
+      <ol class="navegador">
+        <li><a href="/index.html" class="otras-paginas">Índice</a></li>
+        <li><a href="/historico.html" class="pagina-actual">Histórico</a></li>
+        <li>
+          <a href="/sobrenatural.html" class="otras-paginas">Sobrenatural</a>
+        </li>
+      </ol>
+    </nav>
+    <div class="estanteria">
+      <h2>Vagabond</h2>
+      <div class="libro libro-principal">
+        <div class="contenedor-centrado">
+          <a class="portada" href="/vagabond.html">
+            <img src="/images/vagabond.jpg" alt="Portada de Vagabond" />
+          </a>
+        </div>
+        <div class="contenedor-centrado">
+          <ol class="informacion-del-libro">
+            <li>
+              <a
+                id="Descripcion"
+                class="titulo-mostrado"
+                onclick="display(this);"
+                href="#/Descripcion"
+                ><strong>Descripción</strong></a
+              >
+            </li>
+            <li>
+              <a
+                id="Caracteristicas"
+                onclick="display(this);"
+                href="#/Caracteristicas"
+                ><strong>Características</strong></a
+              >
+            </li>
+          </ol>
+        </div>
+        <div class="contenedor-centrado">
+          <p id="DescripcionTexto" class="informacion">
+            Obra basada en la figura de
+            <strong>Musashi Miyamoto</strong> (1584-1645), un legendario
+            guerrero japonés autor del tratado sobre artes marciales titulado
+            <strong>"El libro de los cinco anillos"</strong>. La historia
+            comienza en el emblemático campo de batalla de Sekigahara, del cual
+            al volver Musashi decide emprender un viaje para convertirse en el
+            guerrero perfecto.
+          </p>
+          <ul id="CaracteristicasTexto" class="informacion oculto">
+            <li>Autor: Takehiko Inoue</li>
+            <li>Género: épico, artes marciales, drama</li>
+            <li>Volúmenes: 37</li>
+            <li>Recorrido: 1998 - 2010, 2012 - 2015</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <footer class="pie-de-pagina">
-    <p>Trabajo realizado por <strong>Ramon Pérez Garcia</strong>. Asignatura
-      Herramientas HTML i CSS.</p>
-  </footer>
-  <script src="/display_block.js"></script>
-</body>
+    <footer class="pie-de-pagina">
+      <p>
+        Trabajo realizado por <strong>Ramon Pérez Garcia</strong>. Asignatura
+        Herramientas HTML i CSS.
+      </p>
+    </footer>
+    <script src="/display_block.js"></script>
+  </body>
 </html>

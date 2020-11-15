@@ -128,7 +128,7 @@
   text-align: center;
   font-size: 14px;
   border-top: 2px solid #ced6e0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #57606f;
 }
@@ -150,7 +150,7 @@
   display: None;
 }
 
-@media only screen and (min-width: 540px){
+@media only screen and (min-width: 540px) {
   .title {
     font-size: 84px;
   }
@@ -162,7 +162,7 @@
     padding: 10px;
     height: 110px;
     width: 55%;
-  
+
     font-size: 32px;
   }
   .pie-de-pagina {
@@ -195,7 +195,7 @@
   .texto-del-cuerpo {
     font-size: 22px;
   }
-  .general-wrapper{
+  .general-wrapper {
     display: flex;
     justify-content: space-evenly;
   }
@@ -233,10 +233,10 @@
   .pantalla-grande {
     display: flex;
   }
-  .pantalla-pequeña{
+  .pantalla-pequeña {
     display: None;
   }
-  .buttons-wrapper-bigscreen{
+  .buttons-wrapper-bigscreen {
     display: flex;
     justify-content: space-evenly;
   }

@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>Awsm - Satsuma</title>
-  <meta name="author" content="Ramon Pérez">
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <link rel="stylesheet" href="index-style.css">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-    rel="stylesheet">
-</head>
-<body>
-  <header class="hero">
-    <h1 class="title">Awsm Manga!</h1>
-  </header>
-  <nav>
-    <ol class="navegador">
-      <li><a href="/index.html" class="otras-paginas">Índice</a></li>
-      <li><a href="/historico.html" class="pagina-actual">Histórico</a></li>
-      <li><a href="/sobrenatural.html" class="otras-paginas">Sobrenatural</a>
-      </li>
-    </ol>
-  </nav>
-  <div class="estanteria">
-    <h2>Satsuma gishiden</h2>
-    <div class="libro libro-principal">
-      <div class="contenedor-centrado">
-        <a class="portada" href="/satsuma_gishiden.html">
-          <img src="/images/satsuma_gishiden.jpg"
-            alt="Portada de Satsuma Gishiden">
-        </a>
-      </div>
-      <div class="contenedor-centrado">
-        <ol class="informacion-del-libro">
-          <li><a id="Descripcion" class="titulo-mostrado"
-            onclick="display(this);"
-            href="#/Descripcion"><strong>Descripción</strong></a></li>
-          <li><a id="Caracteristicas" onclick="display(this);"
-            href="#/Caracteristicas"><strong>Características</strong></a></li>
-        </ol>
-      </div>
-      <div class="contenedor-centrado">
-        <p id="DescripcionTexto" class="informacion">Una historia de samurais pura y dura, situada en
-          el olvidado Japón de mediados del siglo XVIII. Una época en la que los
-          samurais se encuentran fuera de lugar sin batallas que librar y en la
-          que se han visto relegados a malvivir de trabajos como la alfarería y
-          la carpintería. En esta situación de miseria abundan los abusos por
-          parte de los samurais de rangos superiores, lo que lleva a algunos de
-          los miembros de los estamentos más bajos a cuestionarse el sistema...
-        </p>
-        <ul id="CaracteristicasTexto" class="informacion oculto">
-          <li>Autor: Hiroshi Hirata</li>
-          <li>Género: drama</li>
-          <li>Volúmenes: 5</li>
-          <li>Recorrido: 2006 - 2010</li>
-        </ul>
+  <head>
+    <meta charset="utf-8" />
+    <title>Awsm - Satsuma</title>
+    <meta name="author" content="Ramon Pérez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <h1 class="title">Awsm Manga!</h1>
+    </header>
+    <nav>
+      <ol class="navegador">
+        <li><a href="/index.html" class="otras-paginas">Índice</a></li>
+        <li><a href="/historico.html" class="pagina-actual">Histórico</a></li>
+        <li>
+          <a href="/sobrenatural.html" class="otras-paginas">Sobrenatural</a>
+        </li>
+      </ol>
+    </nav>
+    <div class="estanteria">
+      <h2>Satsuma gishiden</h2>
+      <div class="libro libro-principal">
+        <div class="contenedor-centrado">
+          <a class="portada" href="/satsuma_gishiden.html">
+            <img
+              src="/images/satsuma_gishiden.jpg"
+              alt="Portada de Satsuma Gishiden"
+            />
+          </a>
+        </div>
+        <div class="contenedor-centrado">
+          <ol class="informacion-del-libro">
+            <li>
+              <a
+                id="Descripcion"
+                class="titulo-mostrado"
+                onclick="display(this);"
+                href="#/Descripcion"
+                ><strong>Descripción</strong></a
+              >
+            </li>
+            <li>
+              <a
+                id="Caracteristicas"
+                onclick="display(this);"
+                href="#/Caracteristicas"
+                ><strong>Características</strong></a
+              >
+            </li>
+          </ol>
+        </div>
+        <div class="contenedor-centrado">
+          <p id="DescripcionTexto" class="informacion">
+            Una historia de samurais pura y dura, situada en el olvidado Japón
+            de mediados del siglo XVIII. Una época en la que los samurais se
+            encuentran fuera de lugar sin batallas que librar y en la que se han
+            visto relegados a malvivir de trabajos como la alfarería y la
+            carpintería. En esta situación de miseria abundan los abusos por
+            parte de los samurais de rangos superiores, lo que lleva a algunos
+            de los miembros de los estamentos más bajos a cuestionarse el
+            sistema...
+          </p>
+          <ul id="CaracteristicasTexto" class="informacion oculto">
+            <li>Autor: Hiroshi Hirata</li>
+            <li>Género: drama</li>
+            <li>Volúmenes: 5</li>
+            <li>Recorrido: 2006 - 2010</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <footer class="pie-de-pagina">
-    <p>Trabajo realizado por <strong>Ramon Pérez Garcia</strong>. Asignatura
-      Herramientas HTML i CSS.</p>
-  </footer>
-  <script src="/display_block.js"></script>
-</body>
+    <footer class="pie-de-pagina">
+      <p>
+        Trabajo realizado por <strong>Ramon Pérez Garcia</strong>. Asignatura
+        Herramientas HTML i CSS.
+      </p>
+    </footer>
+    <script src="/display_block.js"></script>
+  </body>
 </html>
