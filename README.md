@@ -56,7 +56,7 @@ Postcss es una herramienta incluida en Parecel que sirve para transformar el CSS
 }
 ```
 
-#### Finalmente procedemos a configurar el fichero _.broeserlistrc_
+#### Finalmente procedemos a configurar el fichero _.browserlistrc_
 
 Por defecto _autoprefixer_ se fija solo en als 2 últimas versiones de los principales navegadores. Para que ampliar el rango de navegadores para los que adaptaremos nuestro código debemos configurar un fichero de nombre _.browserlistrc_. Dentro de este fichero escribiremos lo siguiente:
 
