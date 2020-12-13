@@ -139,16 +139,25 @@ Para el pie de página he añadido una imágen recortada con un polígono de cli
 
 A cada una de las dos páginas de categoría le he añadido una imágen de fondo que captura la esencia de la categoría. Como esta imágen queda detrás del título de la categoría, que es de un tono anaranjado, el principal criterio a la hora de escoger las imágenes ha sido que contrastaran bien con este tono y que no tuvieran elementos principales en el centro.
 
-Para dispositivos con poca anchura de pantalla, el título la ocupa prácticamente entera. Por ello las imágenes para dispositivos con pantallas de anchura menor a 540px son distintas, ya que es preferible que en ellas el motivo central de la imágen quede encima del título y no alrededor, como pasa en las imágnes servidas a dispositivos anchos. El formato de todas estas imágnes es .jpg ya que son imágenes con mucho detalle y color y no queremos que ocupen demasiado espacio.
+Para dispositivos con poca anchura de pantalla, el título la ocupa prácticamente entera. Por ello las imágenes para dispositivos con pantallas de anchura menor a 540px son distintas, ya que es preferible que en ellas el motivo central de la imágen quede encima del título y no alrededor, como pasa en las imágenes servidas a dispositivos anchos. El formato de todas estas imágnes es .jpg ya que son imágenes con mucho detalle y color y no queremos que ocupen demasiado espacio.
 
 ## 3. Compresión de las imágenes
 
-Para la compresión de las imágenes he utilizado la herramienta https://tinypng.com/, que ha reducido el peso de las imágnes entre un 30% y un 50% en general. Además, para las imágenes png, he reducido la paleta de colores mediante GIMP, que permite reducir la paleta de colores a los usados en la imágen; en el caso de la imágen de los tigres esta conversión a reducio el tamaño de la imágen en aproximadamente 220kB (la paleta ha quedado en 27 colores) para la imágen de alta calidad.
+Para la compresión de las imágenes he utilizado la herramienta https://tinypng.com/, que ha reducido el peso de las imágnes entre un 30% y un 50% en general. Además, para las imágenes png, he reducido la paleta de colores mediante GIMP, que permite reducir la paleta de colores a los usados en la imágen; en el caso de la imágen de los tigres esta conversión ha reducido el tamaño de la imágen en aproximadamente 220kB (la paleta ha quedado en 27 colores) para la imágen de alta calidad.
 
-Para reducir aún más el peso de algunas imágenes he reducido sus dimensiones ya que era innecesario ofrecer imágnes grandes para dispositivos pequeños.
+Para reducir aún más el peso de algunas imágenes he creado versiones de dimensiones reducidas ya que era innecesario ofrecer imágnes grandes para dispositivos pequeños.
 
 Para las portadas de libros he decidido no ofrecer distintas versiones ya que las imágenes originales no eran de alta calidad y los archivos eran ligeros. Además, como cada una de estas imágenes va acompaña del título me ha parecido mejor dejarlas completas para todos los dispositivos; el patrón detrás de estas páginas es el de una estantería y en una estantería las portadas se ven completas.
+
+Finalmente, he instalado un plugin de parcel llamado `parcel-plugin-imagemin` que crea versiones de tamaño reducido de las imágenes cuando se ejecuta el comando `parcel build`
 
 ## 4. Animación
 
 En este punto no he encontrado dificultades técnicas, pero si de diseño. No se me ocurría ningún objeto en el que una animación pudiese quedar bien incorporada dentro del diseño de la página, así que al final lo que he hecho ha sido añadir una imágen de un Ying Yang que rota, pues la imágen está algo relacionado con la temática y la animación con la imágen.
+
+## 5. Comprobaciones finales
+
+Finalmente, y como en la práctica anterior:
+- He comprobado que no hubiera errores en el html con el validador: https://validator.w3.org/nu/
+- He comprobado que no hubiera errores en el css con el validador: https://jigsaw.w3.org/css-validator/
+- He ejecutado los _audits_ de Chrome.
