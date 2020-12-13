@@ -8,12 +8,19 @@
 .hero {
   height: 180px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(to bottom, #5352ed, #dfe4ea);
 }
 
+.logo {
+  max-height: 75%;
+  width: auto;
+}
+
 .title {
-  padding-top: 60px;
-  text-align: center;
+  margin-right: 20px;
+  width: min-content;
   font-size: 64px;
   font-family: 'Bangers', cursive;
   color: #eccc68;
@@ -133,7 +140,7 @@
   color: #57606f;
 }
 
-.pie-de-pagina p {
+.pie-de-pagina > p {
   margin: 1.5em 0;
 }
 
@@ -150,9 +157,59 @@
   display: None;
 }
 
+.footer-hero {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  margin-right: 10px;
+  width: 140px;
+  font-family: 'Bangers', cursive;
+  font-size: 22px;
+  text-align: right;
+  color: #eccc68;
+}
+
+.footer-image {
+  width: 80px;
+  clip-path: polygon(65% 0%, 90% 50%, 65% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+@keyframes yingYang {
+  0% {
+    transform: rotate(0turn);
+  }
+  50% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.animacion-yingyang {
+  animation: yingYang 6.44s linear 0.1s infinite;
+  animation-play-state: paused;
+}
+
+.animacion-yingyang:hover {
+  animation-play-state: running;
+}
+
 @media only screen and (min-width: 540px) {
+  .hero {
+    height: 240px;
+  }
   .title {
+    width: auto;
     font-size: 84px;
+    padding-top: 30px;
+  }
+  .logo{
+    margin-top: 30px;
   }
   .gradient,
   .texto-del-cuerpo {
@@ -179,14 +236,23 @@
   .contenedor-centrado {
     margin-bottom: 20px;
   }
+  .footer-title {
+    width: 160px;
+    font-size: 32px;
+  }
+  .footer-image {
+    width: 120px;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
-  .hero {
-    height: 240px;
-  }
   .title {
     font-size: 124px;
+    padding-top: 60px;
+  }
+  .logo{
+    margin-top: 60px;
+    max-height: 140px;
   }
   .pie-de-pagina {
     font-size: 16px;
@@ -239,5 +305,12 @@
   .buttons-wrapper-bigscreen {
     display: flex;
     justify-content: space-evenly;
+  }
+  .footer-title {
+    width: 260px;
+    font-size: 48px;
+  }
+  .footer-image {
+    width: 140px;
   }
 }

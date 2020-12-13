@@ -25,7 +25,8 @@
   </head>
   <body>
     <header class="hero">
-      <h1 class="title">Awsm Manga!</h1>
+      <h1 class="title">Awsm Manga</h1>
+      <img class="logo" src="/images/logo.svg" alt="">
     </header>
     <div class="page">
       <div class="gradient">
@@ -53,13 +54,21 @@
           <div class="button-wrapper">
             <a class="button" href="historico.html"
               >Histórico
-              <img class="button-image" src="/images/historico.png" alt="" />
+              <img class="button-image"
+                srcset="/images/historico_lq.png,
+                        /images/historico_mq.png 1.5x,
+                        /images/historico_hq.png 2x"
+                src="/images/historico_hq.png" alt="" />
             </a>
           </div>
           <div class="button-wrapper pantalla-grande">
             <a class="button" href="sobrenatural.html"
               >Sobrenatural
-              <img class="button-image" src="/images/sobrenatural.png" alt="" />
+              <img class="button-image"
+                srcset="/images/sobrenatural_lq.png,
+                        /images/sobrenatural_mq.png 1.5x,
+                        /images/sobrenatural_hq.png 2x"
+                src="/images/sobrenatural_hq.png" alt="" />
             </a>
           </div>
         </div>
@@ -74,14 +83,22 @@
         <div class="button-wrapper">
           <a class="button" href="sobrenatural.html"
             >Sobrenatural
-            <img class="button-image" src="/images/sobrenatural.png" alt="" />
+            <img class="button-image"
+              srcset="/images/sobrenatural_lq.png,
+                      /images/sobrenatural_mq.png 1.5x,
+                      /images/sobrenatural_hq.png 2x"
+              src="/images/sobrenatural.png" alt="" />
           </a>
         </div>
       </div>
       <div class="contenedor-centrado">
-        <img class="imagen-del-cuerpo" src="/images/gatos.png" alt="" />
+        <img class="imagen-del-cuerpo animacion-yingyang"
+          srcset="/images/yingyang_lq.png,
+                  /images/yingyang_mq.png 1.5x,
+                  /images/yingyang_hq.png 2x"
+          src="/images/yingyang_hq.png" alt="">
       </div>
-      <p class="texto-del-cuerpo saludo">
+      <p class="texto-del-cuerpo saludo" style="color:#5352ed">
         Esperamos que disfrutes del contenido!
       </p>
     </div>
@@ -90,6 +107,10 @@
         Trabajo realizado por <strong>Ramon Pérez Garcia</strong>. Asignatura
         Herramientas HTML i CSS.
       </p>
+      <div class="footer-hero">
+        <p class="footer-title">Awsm Manga!</p>
+        <img class="footer-image" src="/images/footer-image.jpg" alt="">
+      </div>
     </footer>
   </body>
 </html>

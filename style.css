@@ -1,9 +1,14 @@
 .hero {
-  height: 100px;
+  height: 150px;
 }
 
 .title {
   padding-top: 20px;
+  font-size: 46px;
+}
+
+.logo {
+  margin-top: 0;
 }
 
 .navegador {
@@ -59,16 +64,24 @@
 }
 
 .gradient {
-  height: 100px;
+  height: 300px;
   padding: 0.5em 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
+.fondo-historico {
+  background: url(/images/river_small.jpg) no-repeat center;
+}
+
+.fondo-sobrenatural {
+  background: url(/images/fumando_small.jpg) no-repeat center;
+}
+
 .cat-title {
   text-align: center;
-
+  margin-top: 150px;
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
   line-height: normal;
@@ -206,6 +219,7 @@
   color: #3742fa;
 }
 
+
 @media only screen and (min-width: 540px) {
   .hero {
     height: 160px;
@@ -218,10 +232,19 @@
     font-size: 24px;
   }
   .gradient {
-    height: 200px;
+    height: 500px;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .fondo-historico {
+    background: url(/images/rain_big.jpg) no-repeat center center;
+  }
+  .fondo-sobrenatural {
+    background: url(/images/calavera_big.jpg) no-repeat center;
   }
   .cat-title {
     font-size: 64px;
+    margin-top: 0;
   }
   .portada {
     max-width: 400px;
@@ -257,18 +280,6 @@
     height: 40px;
     font-size: 20px;
     justify-content: space-evenly;
-    background: linear-gradient(
-      0.25turn,
-      #dfe4ea,
-      #2f3542,
-      #2f3542,
-      #2f3542,
-      #dfe4ea
-    );
-  }
-  .gradient {
-    height: 250px;
-    padding: 50px 0;
   }
   .cat-title {
     font-size: 80px;

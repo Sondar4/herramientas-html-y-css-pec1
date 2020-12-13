@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 120 300"
+   height="300"
+   width="120"
+   id="svg2"
+   version="1.1">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="layer2" />
+  <g
+     id="layer1">
+    <path
+       id="path4528"
+       d="m 20.641556,251.50916 c 9.779225,-9.60291 20.458841,-6.11094 24.760706,3.40468 3.266961,6.77523 1.3212,14.6404 -7.946804,21.36349 l -22.452001,13.44623 c 3.67659,-5.20886 2.646555,-11.52371 1.676464,-16.06156 -1.890891,-8.45048 -1.813647,-15.72009 3.961635,-22.15284 z"
+       style="fill:#ff4757;fill-opacity:1;stroke:#ff6b81;stroke-width:1.08756566px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4569"
+       d="m 39.957992,249.67848 c 4.93309,1.16013 6.070119,9.13947 5.570867,13.51885 -1.351025,11.85112 -27.245122,23.46335 -17.243181,16.91399 23.846048,-15.6146 -5.828276,-8.30214 4.668925,-16.2967 16.611361,-12.65103 1.739438,-15.37409 7.003389,-14.13614 z"
+       style="fill:#f1f2f6;fill-opacity:1;stroke:#f1f2f6;stroke-width:1.08756566px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path3717"
+       d="M 36.615463,189.05971 105.4593,11.378877 c 1.6964,-0.989898 3.03467,-1.5785523 3.6766,0.872992 L 66.855111,190.71338 C 56.244672,188.0016 48.764524,187.51213 36.615463,189.05971 Z"
+       style="fill:#ff4757;fill-opacity:1;stroke:#ff6b81;stroke-width:1.08756566px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4524"
+       d="m 35.979257,194.00891 c 9.879265,-0.98939 18.032793,-1.01849 29.187615,1.4841 l -21.684377,50.10977 c -2.476069,-1.77508 -10.954732,-4.51045 -16.882293,-2.18249 z"
+       style="fill:#ff4757;fill-opacity:1;stroke:#ff6b81;stroke-width:1.08756566px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4561"
+       d="M 65.482217,188.18876 104.93407,23.775372 107.67656,12.945361 62.302471,187.44891 c 1.649583,0.12065 1.648998,0.19441 3.179746,0.73985 z"
+       style="fill:#f1f2f6;fill-opacity:1;stroke:#f1f2f6;stroke-width:1.08756566;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path
+       id="path4565"
+       d="m 58.413956,196.62789 c -0.300131,0.6984 -15.906876,45.22102 -15.906876,45.22102 l 19.658499,-44.52262 z"
+       style="fill:#f1f2f6;fill-opacity:1;stroke:#f1f2f6;stroke-width:1.08756566px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
+    <text
+       transform="matrix(0.79105562,0.10917401,-0.06957812,1.2545311,0,0)"
+       id="text4573"
+       y="141.15964"
+       x="67.143921"
+       style="font-style:normal;font-weight:normal;font-size:13.5658617px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eccc68;fill-opacity:1;stroke:none;stroke-width:0.33914655"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.56593895px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.33914655"
+         y="141.15964"
+         x="67.143921"
+         id="tspan4571">AM</tspan></text>
+  </g>
+</svg>
