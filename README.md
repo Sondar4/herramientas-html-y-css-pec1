@@ -161,3 +161,24 @@ Finalmente, y como en la práctica anterior:
 - He comprobado que no hubiera errores en el html con el validador: https://validator.w3.org/nu/
 - He comprobado que no hubiera errores en el css con el validador: https://jigsaw.w3.org/css-validator/
 - He ejecutado los _audits_ de Chrome.
+
+***
+
+# Documentación de la PEC3
+
+## Propuestas de mejora sacadas de *Google PageSpeed Insights*
+
+### index.html
+- Algunas imágnes se ofrecen a tamaños muy superiores de lo que realmente es necesario. Reducir las dimensiones de las siguientes 3 imágenes:
+    - yinyang_hq.png
+    - historico_hq.png
+    - sobrenatural_hq.png
+
+En la primera imágen, el tamaño máximo con el que aparece es 170px. Por ello, para mejorar este punto he modificado el html para que escoja la imágen de 340px en el caso de pantallas de retina, y la de 170px para el resto de dispositivos.
+
+Lo mismo pasa con las otras dos imágenes, que nunca pasan de 100px. He dejado una opción de 200px para las pantallas de retina y otra de 100px para el resto.
+
+### Mejoras para todas las páginas
+- Como también se me había comentado en los comentarios de la práctica anterior, el tamaño de la imágen del pie de página es superior a lo que se necesita, así que mejor reducirlo. El mayor tamaño al que llega la imágen del pie de página es 140 px, por tanto he modificado el jtml para que ofrezca dos versiones: una de 280px y otra de 140px.
+- Retirar la depencia a google fonts.
+- Agrupar los dos ficheros CSS en 1 - o poner los criticos al principio y los no críticos al final - (https://stackoverflow.com/questions/8033622/css-stylesheets-at-top-or-bottom-or-how-to-solve-blank-page-issue).
