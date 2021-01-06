@@ -166,25 +166,38 @@ Finalmente, y como en la práctica anterior:
 
 # Documentación de la PEC3
 
-## Propuestas de mejora sacadas de *Google PageSpeed Insights*
+## 1. Mejoras en el rendimiento de la web
 
-### index.html
-1. Algunas imágnes se ofrecen a tamaños muy superiores de lo que realmente es necesario. Por ello, he reducido las dimensiones de las siguientes 3 imágenes:
-    - yinyang_hq.png
-    - historico_hq.png
-    - sobrenatural_hq.png
+La valoración inicial de la web de [Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/) era alta y la misma para todas las páginas: 94 para la versión móvil y 99 para la de escritorio. Las vías de mejora que la herramienta proponía eran dos: reducir el tamaño de algunas imágenes que se ofrecían mucho mayores de lo necesario, y reducir o eliminar recursos que bloqueasen el renderizado.
+
+Las mejoras que he aplicado son las descritas a continuación y, pese a que no han aumentado demasiado la puntuación de la herramienta, han reducido casi a la mitad el peso de la página principal y, en menor medida, el peso del resto de páginas del sitio.
+
+### Cambios
+
+1. Algunas imágenes se ofrecían a tamaños muy superiores de lo que realmente es necesario. Por ello, he reducido las dimensiones de las siguientes 3 imágenes:
+    - yinyang_hq.png\yinyang_mq.png
+    - historico_hq.png\historico_mq.png
+    - sobrenatural_hq.png\sobrenatural_mq.png
+    - footer-image_hq.jpg\footer-image_mq.jpg
 
 El tamaño máximo que puede tener la primera imágen es 170px. Por ello he modificado las imágnes para que se ofrezcan dos versiones según la pantalla del dispositivo: una versión de 340px por 340px para los dispositivos de retina y otra de 170px por 170px para las pantallas regulares.
 
-Lo mismo pasa con las otras dos imágenes, que nunca superan los 100px de anchura, por ello he dejado una opción de 200px y otra de 100px.
+Lo mismo pasa con las otras dos imágenes, que nunca superan los 100px de anchura, por ello he dejado una opción de 200px y otra de 100px. El tamaño de la imágen del pie de página también es superior a lo que se necesita. La mayor anchura que puede tomar la imágen del pie de página es 140 px, por tanto he modificado el html para que ofrezca dos versiones: una de 280px y otra de 140px.
 
-2. Agrupar las llamadas a Google Fonts en una sola llamada.
+2. Como de la fuente del logo solo se usaban un puñado de caracteres (AwsmManga!), he añadido la variable text a la llamada a Google Fonts para esta fuente: esto ha reducido bastante su peso, ha pasado de 1,04KB a 234B.
 
-3. Añadir el preconnect.
+3. Reducir las llamadas a google fonts y añadir un *preconnect*. *Preconnect* crea una conexión con Google Fonts desde el principio para que cuando se carguen las fuentes la conexión ya esté establecida y ahorrar algo de tiempo (según algunas fuentes hasta 100ms). Por otra parte, agrupar todas las fuentes posibles en una misma llamada también reduce el tiempo de carga de la web.
 
-4. Añadir la variable text para la fuente del logo: esto ha reducido enormemente el peso de la fuente, de 1,04KB a 234B.
+### Información sobre las distintas páginas del sitio
 
-### Mejoras para todas las páginas:
-- Como se me había comentado en los comentarios de la práctica anterior, el tamaño de la imágen del pie de página es superior a lo que se necesita. La mayor anchura que puede tomar la imágen del pie de página es 140 px, por tanto he modificado el html para que ofrezca dos versiones: una de 280px y otra de 140px.
-- Retirar la depencia a google fonts.
-- Agrupar los dos ficheros CSS en 1 - o poner los criticos al principio y los no críticos al final - (https://stackoverflow.com/questions/8033622/css-stylesheets-at-top-or-bottom-or-how-to-solve-blank-page-issue).
+| Título         | URL                                                            |Tiempo de carga|Peso total|Peso transferido|#recursos|
+|----------------|----------------------------------------------------------------|---------------|----------|----------------|---------|
+|Índice          |https://flamboyant-pike-3228bc.netlify.app/index.html           |          4,06s| 134,35 KB|       121,44 KB|       13|
+|Histórico       |https://flamboyant-pike-3228bc.netlify.app/historico.html       |          6,91s| 222,67 KB|       209,78 KB|       13|
+|Sobrenatural    |https://flamboyant-pike-3228bc.netlify.app/sobrenatural.html    |          5,95s| 174,96 KB|       162,08 KB|       13|
+|Satsuma Gishiden|https://flamboyant-pike-3228bc.netlify.app/satsuma_gishiden.html|          2,95s|  97,09 KB|        82,61 KB|       12|
+|Vagabond        |https://flamboyant-pike-3228bc.netlify.app/vagabond.html        |          2,91s|  94,12 KB|        79,77 KB|       12|
+|Ajin Semihumano |https://flamboyant-pike-3228bc.netlify.app/ajin_semihumano.html |          2,93s|  86,74 KB|        72,46 KB|       12|
+|Death Note      |https://flamboyant-pike-3228bc.netlify.app/death_note.html      |          3,07s|  98,25 KB|        83,84 KB|       12|
+
+*La tabla ha sido generada con velocidad **Regular 2G** y en una pantalla regular de más de 1240px de ancho.*
