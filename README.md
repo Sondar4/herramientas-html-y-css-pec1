@@ -180,7 +180,7 @@ Las mejoras que he aplicado son las descritas a continuación y, pese a que no h
     - sobrenatural_hq.png\sobrenatural_mq.png
     - footer-image_hq.jpg\footer-image_mq.jpg
 
-El tamaño máximo que puede tener la primera imágen es 170px. Por ello he modificado las imágnes para que se ofrezcan dos versiones según la pantalla del dispositivo: una versión de 340px por 340px para los dispositivos de retina y otra de 170px por 170px para las pantallas regulares.
+El tamaño máximo que puede tener la primera imágen es 170px. Por ello he modificado las imágenes para que se ofrezcan dos versiones según la pantalla del dispositivo: una versión de 340px por 340px para los dispositivos de retina y otra de 170px por 170px para las pantallas regulares.
 
 Lo mismo pasa con las otras dos imágenes, que nunca superan los 100px de anchura, por ello he dejado una opción de 200px y otra de 100px. El tamaño de la imágen del pie de página también es superior a lo que se necesita. La mayor anchura que puede tomar la imágen del pie de página es 140 px, por tanto he modificado el html para que ofrezca dos versiones: una de 280px y otra de 140px.
 
